@@ -1,0 +1,244 @@
+/*SCROLL*/
+html
+{
+  scroll-behavior: smooth;
+}
+
+/*JUMBOTRON*/
+.jumbotron
+{
+background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ1H-X0urwLQoalLtxLjQ6nv1Q4TRuprxV6M9O14prisb3szsVu);
+/*background: url(https://images.unsplash.com/photo-1506623688006-bfa92504db12?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80);*/
+background-size: 1300px 360px;
+
+	
+}
+.jumbotron p
+{
+	font-weight: 500;
+	color: white;
+}
+.jumbotron h1
+{
+	font-weight: 300;
+	color: white;
+}
+.jumbotron h3
+{
+	font-weight: 500;
+	color: white;
+}
+hr
+{
+        height: 0.5px;
+        width: 60%;
+        background-color: white;
+        
+    }
+
+
+
+/*BODY*/
+body
+{
+  background: #f09433; 
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+
+/*CARD*/
+.card
+{
+	padding-top: 20px;
+	border-radius: 25px;
+}
+
+
+/*ABOUT US*/
+.heading-color
+{
+  background: #f09433; 
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+.about
+{
+  border: 15px white;
+  padding: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+  background: black;
+  color: white;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 20px;
+  border-radius: 25px;
+}
+.date
+{
+  color: #3498db;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+.side
+{
+  border-left: 4px solid grey;
+  padding-left: 6px;
+}
+
+
+/*CHAT BOX*/
+#chat-placeholder {
+  position: fixed;
+  bottom: 0;
+  right: 1vw;
+  font-size: 25px;
+  text-align: center;
+  padding: 10px;
+  color: #EFEFEF;
+  width: 400px;
+  height: 50px;
+  cursor: pointer;
+  background: rgba(176, 176, 176, 0.8);
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-shadow: 2px 2px 20px #222;
+}
+#chat
+ {
+  position: fixed;
+  display: none;
+  bottom: 0;
+  right: 5vw;
+  /*text-align: center;*/
+  padding: 10px;
+  color: black;
+  background: white;
+  width: 500px;
+  min-height: 50px;
+  background: rgba(176, 176, 176, 0.8);
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.logo-push-chat {
+  width: 1px;
+  height: 10px;
+}
+.logo-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+/*.mlh-logo {
+  background: url("/public/images/mlh-logo-color.svg"); 
+  background-size: cover;
+  width: 180px;
+  height: 76px;
+  filter: drop-shadow(1px 1px 10px #3e3e3e);
+} */
+.logo-text {
+  font: 27px "Outage", Serif;
+  color: black;
+  font-weight: 900;
+  margin-top: 3px;
+  z-index: 999; /* Move text above logo */
+  user-select: none;
+  text-shadow: 2px 2px 20px #222;
+}
+#chat-area {
+  padding: 15px;
+  max-height: 60vh;
+  overflow: auto;
+}
+#query-field {
+  background: white;
+  border-radius: 25px;
+  border: none;
+  width: 400px;
+  outline: none;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#submit-field {
+  background: white;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all 250ms linear;
+}
+
+#submit-field:hover {
+  background: #6B7373;
+  color: white;
+}
+
+#instagram-logo
+{
+  background: #f09433; 
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+font-size: 27px;
+border-radius: 23px;
+margin: 10px;
+}
+
+#facebook-logo
+{
+  background: #3b5998;
+  padding: 5px;
+  margin: 10px;
+  font-size: 22px;
+  border-radius: 4px;
+}
+#github-logo
+{
+  margin: 10px;
+  font-size: 25px;
+  border-radius: 20px;
+}
+#linkdin-logo
+{
+  background: #0e76a8;
+  padding: 5px;
+  margin: 10px;
+  font-size: 21px;
+  border-radius: 6px;
+}
+.anchor
+{
+  color: white;
+}
+
+/*.buttonGlow1 
+{
+  font-weight: 900;
+  transition-duration: 0.2s;
+}
+
+.buttonGlow1:hover 
+{
+  /*background-color: blue; 
+  color: white;
+}
+
+/*.buttonGlow2
+{
+  font-weight: 900;
+  transition-duration: 0.2s;
+}
+
+.buttonGlow3
+{
+  font-weight: 900;
+  transition-duration: 0.2s;
+}*/
